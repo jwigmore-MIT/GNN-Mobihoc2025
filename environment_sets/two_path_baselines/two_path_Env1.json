@@ -1,0 +1,98 @@
+{
+  "nodes": 8,
+  "link_info": [
+    {
+      "start": 0,
+      "end": 1,
+      "rate": 1.0
+    },
+    {
+      "start": 0,
+      "end": 2,
+      "rate": 1.0
+    },
+    {
+      "start": 1,
+      "end": 3,
+      "rate": 1.0
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "rate": 1.0
+    },
+    {
+      "start": 3,
+      "end": 5,
+      "rate": 1.0
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "rate": 1.0
+    },
+    {
+      "start": 5,
+      "end": 7,
+      "rate": 1.0
+    },
+    {
+      "start": 6,
+      "end": 7,
+      "rate": 1.0
+    }
+  ],
+  "class_info": {
+    "7": {
+      "0": 0.7
+    },
+    "5": {
+      "3": 0.7
+    }
+  },
+  "link_distribution": "fixed",
+  "arrival_distribution": "poisson",
+  "seed": 3,
+  "topology_type": "barabasi_albert",
+  "action_func": null,
+  "metrics": {
+    "num_nodes": 8,
+    "num_links": 8,
+    "num_classes": 2,
+    "topology_type": "barabasi_albert",
+    "avg_in_degree": 1.0,
+    "avg_out_degree": 1.0,
+    "density": 0.14285714285714285,
+    "diameter": Infinity,
+    "total_arrival_rate": 1.4,
+    "max_class_arrival_rate": 0.7,
+    "min_class_arrival_rate": 0.7,
+    "std_class_arrival_rate": 0.0,
+    "avg_link_rate": 1.0,
+    "min_link_rate": 1.0,
+    "max_link_rate": 1.0,
+    "std_link_rate": 0.0,
+    "avg_path_diversity": 1.5,
+    "min_path_diversity": 1,
+    "avg_flow_ratio": 0.52,
+    "max_flow_ratio": 0.7,
+    "num_unsatisfiable_flows": 0,
+    "SPTS_backlog": 114.33,
+    "SPTS_throughput": 0.842,
+    "SPBP_backlog": 5.13,
+    "SPBP_throughput": 0.997
+  },
+  "baselines": {
+    "max_steps": 1000,
+    "SPTS": {
+      "backlog": 114.33,
+      "throughput": 0.842,
+      "backlog_std": 22.28
+    },
+    "SPBP": {
+      "backlog": 5.13,
+      "throughput": 0.997,
+      "backlog_std": 0.41
+    }
+  }
+}

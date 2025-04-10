@@ -1,0 +1,85 @@
+# from create_random_network_routing import create_context_set
+from create_random_networks import create_context_set
+import numpy as np
+if __name__ == "__main__":
+    create_context_set(
+        100,
+        name="env_set_b",
+        topology_types=['barabasi_albert'],
+        avg_degree_sampler=lambda: 4,
+        num_node_sampler=lambda: np.random.randint(10, 15),
+        destination_density_sampler=lambda: np.random.uniform(0.2, 0.4),
+        arrival_node_density_sampler=lambda: np.random.uniform(0.2, 0.4),
+        service_rate_sampler=lambda: np.random.randint(1, 5),
+        link_power_sampler=lambda: np.random.randint(1, 5),
+        arrival_rate_sampler=lambda: np.random.gamma(1.5, 0.5),
+        # np.random.uniform(0.1, 2),
+        policies=["SPBP", "SPTS"],
+        num_evals=3,
+        max_steps=1000,
+        min_throughput=0.9,
+        max_throughput=1.0,
+        min_min_backlog=25,
+        plot_graph=False,
+        metrics=True,
+        save=True,
+        topology_timeout_seconds = 120,
+    )
+
+    # create_context_set(
+    #     10,
+    #     name="random_generation_10_context_set_e",
+    #     topology_type=['barabasi_albert','erdos_renyi','watts_strogatz'],
+    #     avg_degree_sampler=lambda: np.random.randint(3,5),
+    #     num_node_sampler=lambda: np.random.randint(20, 40),
+    #     destination_density_sampler=lambda: np.random.uniform(0.1, 0.3),
+    #     arrival_node_density_sampler=lambda: np.random.uniform(0.1, 0.3),
+    #     service_rate_sampler=lambda: np.random.randint(1, 10),
+    #     link_power_sampler=lambda: np.random.randint(1, 5),
+    #     arrival_rate_sampler=lambda: np.clip(np.random.normal(loc = 0.5, scale = 0.5), 0.05, np.inf), #np.random.uniform(0.1, 2),
+    #     policies=["SPTS", "SPBP"],
+    #     num_evals=1,
+    #     max_steps=1000,
+    #     min_max_throughput=0.9,
+    #     min_mean_backlog=30,
+    #     plot_graph=True,
+    #     metrics=True,
+    #     save=True,
+    # )
+
+
+    # create_context_set(
+    #     20,
+    #     name = "barabasi_albert_100_context_set_3_19a",
+    #     topology_type='barabasi_albert',
+    #     avg_degree=4,
+    #     num_node_sampler=lambda: np.random.randint(20, 40),
+    #     destination_density=0.15,
+    #     arrival_node_density=0.2,
+    #     service_rate_sampler=lambda: np.random.randint(1, 10),
+    #     link_power_sampler=lambda: np.random.randint(1, 5),
+    #     arrival_rate_sampler=lambda: np.random.uniform(0, 1),
+    #     policies=["SPTS", "SPBP"],
+    #     num_evals=1,
+    #     max_steps=1000,
+    #     min_max_throughput = 0.9,
+    #     plot_graph = True,
+    #     metrics = True,
+    #     save= True,
+    # )
+
+    # network_configs = create_context_set(
+    #     1,
+    #     topology_type='barabasi_albert',
+    #     avg_degree=4,
+    #     num_node_sampler= lambda: 10,
+    #     destination_density=0.2,
+    #     arrival_node_density=0.2,
+    #     service_rate_sampler=lambda: np.random.randint(1, 10),
+    #     arrival_rate_sampler=lambda: np.random.uniform(0, 1),
+    #     policies=["BP", "SPBP", "SPBP2","CWTS", "SPTS"],
+    #     num_evals=1,
+    #     max_steps=2000,
+    #     save = False,
+    #     plot_graph = True,
+    # )

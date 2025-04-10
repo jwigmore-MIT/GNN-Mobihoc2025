@@ -1,0 +1,143 @@
+{
+  "num_nodes": {
+    "mean": 12.17,
+    "std": 1.342,
+    "min": 10.0,
+    "max": 14.0
+  },
+  "num_links": {
+    "mean": 40.68,
+    "std": 5.368,
+    "min": 32.0,
+    "max": 48.0
+  },
+  "num_classes": {
+    "mean": 2.8,
+    "std": 0.8,
+    "min": 1.0,
+    "max": 5.0
+  },
+  "topology_type": {
+    "barabasi_albert": 100
+  },
+  "avg_in_degree": {
+    "mean": 3.334,
+    "std": 0.076,
+    "min": 3.2,
+    "max": 3.429
+  },
+  "avg_out_degree": {
+    "mean": 3.334,
+    "std": 0.076,
+    "min": 3.2,
+    "max": 3.429
+  },
+  "density": {
+    "mean": 0.302,
+    "std": 0.031,
+    "min": 0.264,
+    "max": 0.356
+  },
+  "diameter": {
+    "mean": 3.24,
+    "std": 0.427,
+    "min": 3.0,
+    "max": 4.0
+  },
+  "total_arrival_rate": {
+    "mean": 1.831,
+    "std": 1.197,
+    "min": 0.23,
+    "max": 5.64
+  },
+  "max_class_arrival_rate": {
+    "mean": 1.169,
+    "std": 0.793,
+    "min": 0.19,
+    "max": 4.13
+  },
+  "min_class_arrival_rate": {
+    "mean": 0.248,
+    "std": 0.307,
+    "min": 0.0,
+    "max": 1.51
+  },
+  "std_class_arrival_rate": {
+    "mean": 0.41,
+    "std": 0.329,
+    "min": 0.0,
+    "max": 1.57
+  },
+  "avg_link_rate": {
+    "mean": 4.994,
+    "std": 0.323,
+    "min": 4.17,
+    "max": 5.67
+  },
+  "min_link_rate": {
+    "mean": 3.01,
+    "std": 0.099,
+    "min": 3.0,
+    "max": 4.0
+  },
+  "max_link_rate": {
+    "mean": 7.0,
+    "std": 0.0,
+    "min": 7.0,
+    "max": 7.0
+  },
+  "std_link_rate": {
+    "mean": 1.376,
+    "std": 0.143,
+    "min": 0.91,
+    "max": 1.75
+  },
+  "avg_path_diversity": {
+    "mean": 2.368,
+    "std": 0.419,
+    "min": 1.0,
+    "max": 3.5
+  },
+  "min_path_diversity": {
+    "mean": 1.81,
+    "std": 0.392,
+    "min": 1.0,
+    "max": 2.0
+  },
+  "avg_flow_ratio": {
+    "mean": 0.029,
+    "std": 0.02,
+    "min": 0.01,
+    "max": 0.09
+  },
+  "max_flow_ratio": {
+    "mean": 0.088,
+    "std": 0.076,
+    "min": 0.014,
+    "max": 0.477
+  },
+  "num_unsatisfiable_flows": {
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+  },
+  "DPP_3_backlog": {
+    "mean": 72.915,
+    "std": 46.009,
+    "min": 11.33,
+    "max": 228.42
+  },
+  "DPP_3_throughput": {
+    "mean": 0.974,
+    "std": 0.014,
+    "min": 0.933,
+    "max": 0.997
+  },
+  "DPP_3_power": {
+    "mean": 10.876,
+    "std": 3.271,
+    "min": 3.46,
+    "max": 19.56
+  }
+}
